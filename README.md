@@ -74,7 +74,9 @@ Tải ứng dụng **VNPT SmartCA** trên điện thoại bằng cách quét mã
    - **Gói VNPT SmartCA PS eDu:** Phù hợp cho giáo viên ký học bạ điện tử và dịch vụ công (giá ưu đãi: 55.000đ).
 2. Xác nhận đơn hàng và thực hiện thanh toán bằng mã QR:
    - Tải ảnh mã QR thanh toán về máy.
-   - Mở ứng dụng Ngân hàng $\rightarrow$ Chọn **Quét mã QR** $\rightarrow$ Chọn ảnh mã QR vừa tải để hoàn tất thanh toán.
+   <ul>
+  <li>Mở ứng dụng Ngân hàng &rarr; Chọn Quét mã QR &rarr; Chọn ảnh mã QR vừa tải để hoàn tất thanh toán.</li>
+</ul>
 
 ---
 
