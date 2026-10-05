@@ -2,26 +2,68 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>Cổng Thông Tin Nghiệp Vụ</title>
+  <title>Hướng Dẫn Đăng Ký VNPT SmartCA dành cho Công Dân</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Hướng dẫn đăng ký chứng thư chữ ký số qua ứng dụng VNPT SmartCA cho Công dân">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <!-- Giao diện chuẩn phong cách Vue của Docsify -->
+  
+  <!-- Docsify Theme Stylesheet (Giao diện Vue chuẩn, hiện đại) -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  
+  <!-- Tùy chỉnh CSS giao diện -->
+  <style>
+    :root {
+      --theme-color: #005baa; /* Màu xanh thương hiệu VNPT */
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    .markdown-section strong {
+      color: #005baa;
+    }
+    .app-name-link {
+      font-weight: bold;
+      color: #005baa !important;
+    }
+  </style>
 </head>
 <body>
-  <div id="app">Đang tải dữ liệu hệ thống...</div>
+  <!-- Thẻ chứa ứng dụng Docsify -->
+  <div id="app">Đang tải tài liệu...</div>
+
   <script>
     window.$docsify = {
-      name: 'Cổng Tri Thức & Nghiệp Vụ',
-      repo: '',
-      loadSidebar: true, // Kích hoạt thanh menu danh mục bên trái
-      subMaxLevel: 3,    // Tự động lấy tiêu đề trang đưa vào menu
-      search: 'auto'     // Kích hoạt thanh tìm kiếm toàn trang
+      name: 'VNPT SmartCA',
+      repo: '', // Nhập URL Repo GitHub của bạn nếu muốn hiển thị nút GitHub (ví dụ: 'https://github.com/username/repo')
+      loadSidebar: false, // Bật 'true' nếu bạn tạo file _sidebar.md riêng
+      auto2top: true,     // Tự động cuộn lên đầu trang khi chuyển mục
+      maxLevel: 3,        // Độ sâu hiển thị tiêu đề trong thanh bên
+      subMaxLevel: 2,     // Tự động tạo menu thanh bên từ các thẻ H2, H3 trong file README.md
+      search: {
+        maxAge: 86400000, // Thời gian lưu cache tìm kiếm (ms)
+        paths: 'auto',
+        placeholder: 'Tìm kiếm hướng dẫn...',
+        noData: 'Không tìm thấy kết quả!',
+        depth: 6
+      },
+      copyCode: {
+        buttonText: 'Sao chép',
+        errorText: 'Lỗi',
+        successText: 'Đã sao chép'
+      }
     }
   </script>
-  <!-- Thư viện mã nguồn mở Docsify -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-  <!-- Plugin tìm kiếm thông minh -->
+
+  <!-- Docsify Core JS -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+  
+  <!-- Plugin Tìm kiếm (Search Plugin) -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  
+  <!-- Plugin Sao chép đoạn mã (Copy Code Plugin) -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  
+  <!-- Plugin Phóng to hình ảnh (Zoom Image Plugin) -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
 </body>
 </html>
